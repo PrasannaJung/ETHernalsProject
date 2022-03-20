@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+  
+
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js"
+      type="text/javascript"
+    ></script>
+    <title>Salary Management</title>
+  </head>
+  <body class="bg-slate-200 min-h-screen">
+    <div class="container">
+      <header class="text-lg flex justify-between bg-slate-400 py-2 px-4">
+        <h1>LW3 NOOBS</h1>
+        <nav>
+          <ul class="flex gap-4">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+          </ul>
+        </nav>
+        <div class="connect">
+          <button
+            class="connect-btn bg-blue-500 py-1 px-3 rounded-md text-white"
+          >
+            Connect Wallet
+          </button>
+        </div>
+      </header>
+      <main>
+        <section>
+          <form class="flex flex-col gap-2 items-center mt-3" action="#">
+            <label for="address">Enter Employee's Address: </label>
+            <input
+              class="rounded-md outline-none text-xs py-1 px-2"
+              id="address"
+              type="text"
+              name=""
+              id="address"
+            />
+            <select
+              title="Position"
+              class="positions outline-none rounded-md"
+              name=""
+              id=""
+            >
+              <option class="intern" value="0">Intern</option>
+              <option class="junior" value="1">Junior</option>
+              <option class="senior" value="2">Senior</option>
+            </select>
+
+            <button class="pay-btn bg-red-800 text-white py-1 px-2 rounded-md">
+              Pay Now
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
